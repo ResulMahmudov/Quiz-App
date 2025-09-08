@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Quizdata from "../data/QuizData";
+import QuizData from "../data/QuizData";
 import Topics from "../data/Topics";
 
 
@@ -8,7 +8,7 @@ import Topics from "../data/Topics";
 const QuizPage = () => {
   const { topicId } = useParams();
  const topic = Topics.find((t) => t.id === topicId);
-  const questions = Quizdata[topicId] || [];
+  const questions = QuizData[topicId] || [];
 
   const navigate = useNavigate();
 
