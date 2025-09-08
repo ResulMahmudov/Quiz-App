@@ -54,7 +54,7 @@ const QuizPage = () => {
 
       <div className="  flex justify-between mt-[10%]">
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-w-[400px]">
            {/* Question progress */}
           <p className="text-gray-600 text-xl text-[#313E51]">
             Question {currentQuestion + 1}/{questions.length}

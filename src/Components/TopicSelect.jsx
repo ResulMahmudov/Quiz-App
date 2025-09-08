@@ -30,7 +30,7 @@ const TopicSelect = () => {
               <button
                 key={topic.id}
                 onClick={() => navigate(`/quiz/${topic.id}`)}
-                className="flex gap-3 items-center w-[812px] h-20 p-5 font-bold text-[28px] rounded-[20px] bg-white hover:bg-purple-100"
+                className="flex gap-3 items-center w-[812px] h-20 p-5 font-bold text-[28px] rounded-[20px] bg-white"
               >
                 {topic.icon}
                 {topic.name}
